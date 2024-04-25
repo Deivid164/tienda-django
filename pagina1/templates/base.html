@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/section.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/ventanaLateral.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fetch.css' %}">
+</head>
+<body>
+    <div class="container-dollar">
+        <p id="valor"></p>
+        <p class="barraDiagonal">|</p>
+        <p id="fecha"></p>
+    </div>
+    <header>
+      <div class="container">
+        <h2><a class="logo" href="{% url 'home' %}">Manibet Technology</a></h2>
+        <div class="content-option">
+          <ul>
+            <li><a href="" class="product">Productos</a></li>
+          </ul>
+          <div class="lists">
+            <section class="lists-content">
+              <div class="flecha-products"></div>
+              <ul class="cuerpo-uls">
+                <li><a class="hardare" href="{% url 'teclados' %}">Teclados</a></li>
+                <li><a class="hardare" href="{% url 'mouse' %}">Mouse</a></li>
+                <li><a class="hardare" href="{% url 'placasMadre' %}">Placas Madre</a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <div class="content-icons">
+          <div class="content-carrito">
+            <img class="imgCarrito" id="imgCarrito" src="{% static 'img/img-btns/carrito-de-compras.png' %}" alt="">
+            <p class="countProducts" id="countProducts">0</p>   
+          </div>
+        </div>
+      </div>
+    </header>
+
+    {% include 'componentes/menu_lateral.html' %} 
+    {% include 'componentes/eliminar_product.html' %}
+
+    {% block content %}
+  
+    {% endblock %}
+ 
+    <div class="closeWindow" id="closeWindow"></div>
+
+    <script src="{% static 'js/script.js' %}" defer></script>
+    <script src="{% static 'js/ventanaLateral.js' %}" defer></script>
+    <script src="{% static 'js/eliminar_product.js' %}" defer></script>
+    <script src="{% static 'js/fetch.js' %}"></script>
+</body>
+</html>

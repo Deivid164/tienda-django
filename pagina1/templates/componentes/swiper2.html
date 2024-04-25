@@ -1,0 +1,39 @@
+{% load static %}
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/swiper2.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+ <body>
+    <div class="swiper2 mySwiper">
+        <h2 class="titulo-swiper2">Productos</h2>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="img-swiper2" src="{% static 'img/Mouse/mouse-gear3120.jpg' %}" alt=""></div>
+            <div class="swiper-slide"><img class="img-swiper2" src="{% static 'img/placas-madres/MSI  Z170A-G45 GAMING.png' %}" alt=""></div>
+            <div class="swiper-slide"><img class="img-swiper2" src="{% static 'img/Teclados/Keyboard-4.png' %}" alt=""></div>
+            <div class="swiper-slide"><img class="img-swiper2" src="{% static 'img/Mouse/mouse-lehmoxGTM3.png' %}"  alt=""></div>
+            <div class="swiper-slide"><img class="img-swiper2" src="{% static 'img/Teclados/Keyboard-2.png' %}" alt=""></div>
+            <div class="swiper-slide"><img class="img-swiper2" src="{% static 'img/Mouse/mouse-MarvoM209.jpg' %}"  alt=""></div>
+            <div class="swiper-slide"><img class="img-swiper2" src="{% static 'img/placas-madres/MSI H310M PRO-VDH PLUS.png' %}" alt=""></div>
+            <div class="swiper-slide"><img class="img-swiper2" src="{% static 'img/Teclados/Keyboard-5.png' %}"  alt=""></div>
+            <div class="swiper-slide"><img class="img-swiper2" src="{% static 'img/Teclados/Keyboard-6.jpg' %}"  alt=""></div>
+            <div class="swiper-slide"><img class="img-swiper2" src="{% static 'img/placas-madres/ASUS PRIME A620M-K.jpg' %}" alt=""></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        let swiper2 = new Swiper(".mySwiper", {
+            slidesPerView: 5,
+            spaceBetween: 2,
+            loop:true,
+            autoplay:{
+            delay: 1600,
+            pauseOnMouseEnter:true,
+            reverseDirection:true,
+            },
+        });
+    </script>
+</body>
+{% endblock %}

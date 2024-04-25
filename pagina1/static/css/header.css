@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+
+header{
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.container{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color:#9c9b9b;;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.lists{
+    position: relative;
+}
+
+.content-option{
+    display: flex;
+    align-items: center;
+}
+
+.content-option>ul>li{
+    list-style: none;
+}
+
+.product{   
+    text-decoration: none; 
+    font-size: .999rem;
+    color: #9c9b9b;
+    font-weight: 800;
+    font-family: "Open Sans"
+}
+
+
+.lists-content{
+    width: 140px;
+    background: rgb(29, 28, 28);
+    position: absolute;
+    z-index: 99;
+    top: 20px;left: -40px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    box-shadow: 0px 0px 1px;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.content-option:hover .lists-content{
+    visibility: visible;
+}
+
+.flecha-products:before{
+    content:"";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    border-width: 0 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent rgb(29, 28, 28);;
+}
+
+.cuerpo-uls{
+    margin: 0 ;
+    padding: 4px;
+}
+
+.cuerpo-uls>li{
+    margin: 10px 1px;
+    list-style: none;
+}
+
+.cuerpo-uls>li>a{
+    font-family: "Roboto Slab";
+    font-weight: 500;
+    font-size:  .999rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.cuerpo-uls>li:hover{
+    transition: all 0.4s ease-in-out;
+    background: #3b3b3b;
+}
+
+.imgCarrito{
+    width: 25px;
+    height: 25px;
+    filter: brightness(0) saturate(100%) invert(93%) sepia(97%) saturate(260%) hue-rotate(277deg) brightness(107%) contrast(107%);
+}
+
+/* contador de productos */
+.content-carrito{
+    position: relative;
+    cursor: pointer;
+}
+
+.countProducts{
+    background:#fff;
+    color: rgb(19, 18, 18);
+    border-radius: 50%;
+    position: absolute;
+    padding: 1px 5px;
+    top: -10px; right:-10px;
+    z-index: 1;
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: cursive;
+    visibility: hidden;
+}  
+
+.appearCounter{
+    transition: 0.4s ease-in-out;
+    visibility: visible;
+    border: 1px solid rgb(107, 104, 104);
+    color: rgb(49, 48, 48);
+    background-color: rgb(255, 255, 255);
+}
+

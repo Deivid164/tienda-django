@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
+
+.products{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  
+    margin-top: 30px;
+    gap: 20px;
+}
+
+/* contenedor producto */
+.cart{
+    box-shadow: 1px 1px 3px #3d3d3d;
+    background: #a5a3a3;
+    height: 270px;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 4px;
+    background-color: #181717;
+}
+
+.container-img{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #fff;
+    background: #fff;
+    width: 100%;
+}
+
+.img-product2{
+    visibility: hidden;
+    position: absolute; 
+}
+
+.img-product, .img-product2{
+    height: 150px;
+    width: 265px;
+    transition: all 0.4s ease-in-out;
+    object-fit:  contain;
+}
+
+.container-img:hover .img-product2{
+    visibility: visible;
+}
+
+.img-product:hover{
+    transition: 0.4s ease-in-out;
+    transform: scale(1.1);
+}
+
+.title{
+    margin-top: 0;
+    font-family: "PT Serif", serif;
+    font-weight: 600;
+    font-style: normal;
+    color:#fff;
+    font-size: .979rem;
+    margin: 4px;
+}
+
+.btn-cart{
+    color: #ffffff;
+    border: 1px solid rgb(151, 145, 145);
+    text-decoration: none;
+    padding: 7px 18px;
+    border-radius: 20px;
+    font-size: 1em;
+    font-family: "Asap", sans-serif;
+    font-weight: bold;
+}
+
+.btn-cart:hover{
+    transition: all .4s ease-in-out;
+    background-color: rgb(71, 71, 92);
+    color: #fff;
+}
+
+
+.cart > p{
+    color: #748573;;
+}
+
+.cart > p span{
+    color: #748573;
+    font-weight: bolder;
+    font-size: 25px;
+}
+

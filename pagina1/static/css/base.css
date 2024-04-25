@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 93%;
+    margin: 0 auto;
+    background-color: #181717;
+}

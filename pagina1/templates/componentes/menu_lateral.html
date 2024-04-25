@@ -1,0 +1,21 @@
+{% load static %}
+
+{% block content %}
+
+<div class="cart-products" id="cart-products" data="close-products">
+    <div class="container-title">
+      <div class="content-title-card">
+        <h4 class="nombre-carrito">Carrito |</h4>
+        <span id="countProducts1">0</span><p class="content-title-card-productos">productos</p>
+      </div>
+      <button class="btn-x" id="btn-x"><img class="img-x" src="{% static 'img/img-btns/x.png' %}" alt=""></button> 
+    </div>
+    <div class="container-items" id="imgCart">
+      
+    </div>
+    <div class="container-price">
+      <p>Total $ <span id="price"> 0</span></p>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+  {% include 'componentes/swiper.html' %}
+
+  <div class="container-imgRtx">
+    <div class="content-Rtx4080">
+      <img src="{% static 'img/pgu/Rtx-4080.jpg' %}" alt="">
+    </div>
+    <div class="content-descripcion">
+      <h1>GeForce RTX 4080</h1><br>
+      <p>Potencia tu PC con NVIDIA® GeForce RTX™ 4080 SUPER y RTX 4080. Da vida a tus juegos y proyectos creativos con ray tracing acelerado y gráficos impulsados ​por IA. Está impulsada por la arquitectura ultraeficiente NVIDIA Ada Lovelace y 16 GB de memoria G6X súper rápida.</p><br>
+      <h2>Diseñadas para Conseguir Superpotencia</h2><br>
+      <p>Nuevos Multiprocesadores de Transmisión</p>
+      <p>2 veces mayor rendimiento y eficiencia en energía</p><br>
+        
+      <h3>Núcleos Tensor de 4.ª Generación</h3>
+      <p>Hasta 4 veces más rendimiento con DLSS 3 vs. representación de capacidad</p><br>
+        
+      <h3>Núcleos RT de 3.ª Generación</h3>
+      <p>Hasta dos veces mayor rendimiento con ray tracing</p><br><br>
+      
+      <a href="https://www.nvidia.com/es-la/geforce/ada-lovelace-architecture/" target="_blank">Conoce Más sobre la Arquitectura Ada Lovelance</a>
+    </div>
+  </div>
+
+  {% include 'componentes/swiper2.html' %}
+  
+  <div class="products">
+
+  </div>
+
+  {% include 'componentes/footer.html' %}
+{% endblock %}
+
+
+
+
+

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
+
+.container-imgRtx{
+    display: flex;   
+    margin-top: 50px;
+    border-radius: 4px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(29,28,28,1) 24%, rgba(24,24,24,1) 39%, rgba(19,19,19,1) 44%, rgba(15,15,15,1) 49%, rgba(10,10,10,1) 52%);
+}
+
+.content-Rtx4080{
+    padding: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.content-Rtx4080 > img{
+    border-radius: 4px;
+    width: 600px;
+}
+
+.content-descripcion{
+    text-align: center;  
+    padding: 10px;
+}
+
+a,p,h1,h2,h3{
+    color: white;
+}
+
+
+h1,h2,h3{
+    font-family: "Vazirmatn", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+a,p{
+    font-family: "Yrsa", serif;
+ 
+    font-size: 1em;
+}
+
+a{
+    font-size: 1.2em;
+}

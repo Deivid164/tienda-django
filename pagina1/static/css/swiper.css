@@ -1,0 +1,29 @@
+
+
+.swiper-hero{
+    margin-top: 30px;
+    width: 60%;
+    border-radius: 15px;
+    border: 2px solid rgb(26, 25, 25);
+}
+
+.swiper-wrapper img{
+    width: 100%; 
+    height: 400px;
+    object-fit:cover;
+}
+
+.swiper-button-prev ,.swiper-button-next{
+    visibility: hidden;
+    filter: brightness(0) saturate(100%) invert(94%) sepia(29%) saturate(922%) hue-rotate(2deg) brightness(89%) contrast(82%);
+}
+
+.swiper-pagination{
+    filter: brightness(0) saturate(100%) invert(96%) sepia(6%) saturate(191%) hue-rotate(151deg) brightness(105%) contrast(92%);
+
+}
+
+.swiper:hover .swiper-button-prev,
+.swiper:hover .swiper-button-next{
+    visibility: visible;
+}

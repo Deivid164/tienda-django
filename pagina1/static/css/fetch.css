@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto+Slab:wght@100..900&display=swap');
+
+.container-dollar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: rgb(143, 141, 141);
+    background-color: #181717;
+    height: 20px;
+    width: 100%;
+}
+
+#valor, #fecha{
+    font-size: 0.9em;
+    font-weight: bold;
+    font-family: "Open Sans";
+}
+
+.barraDiagonal{
+    font-size: 1.1em;
+    margin-left: 5px;
+    margin-right: 5px;
+}

@@ -1,0 +1,51 @@
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/swiper.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<body>
+  <div class="swiper swiper-hero">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="{% static 'img/img-slider/teclado.jpg' %}" alt=""></div>
+      <div class="swiper-slide"><img src="{% static 'img/img-slider/Mouse.jpg' %}" alt=""></div>
+      <div class="swiper-slide"><img src="{% static 'img/img-slider/placa_madre.png' %}" alt=""></div>
+      <div class="swiper-slide"><img src="{% static 'img/img-slider/gpu.jpg' %}" alt=""></div>
+    </div>
+  
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+      const swiper = new Swiper('.swiper-hero', {
+      slidesPerView:"auto",
+      direction: 'horizontal',
+      loop: true,
+      spaceBetween:2,
+      slidesPerGroupAuto:true,
+      effect:'fade',
+      autoplay:{
+        delay:3000,
+        pauseOnMouseEnter:true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable:true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+    });
+
+  </script>
+</body>
+{% endblock %}
